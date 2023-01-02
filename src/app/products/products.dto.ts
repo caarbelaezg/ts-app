@@ -5,3 +5,5 @@ export interface CreateProductDto extends Omit<Product, 'id' | 'createdAt'| 'upd
 }
 
 export interface UpdateProductDto extends Partial<CreateProductDto> {};
+
+export interface FindProductDto extends Readonly<Partial<Product>>{};
